@@ -174,10 +174,11 @@ h1 {
     padding: 8px 12px;
     border-radius: 8px;
     opacity: 0;
+    cursor: default;
 }
 
-.title:hover,
-.title:active {
+.hover:hover,
+.hover:active {
     color: #e5e5e5;
     font-size: 200%;
     padding: 5px;
@@ -188,6 +189,7 @@ h1 {
     background-color: rgba(88, 17, 0, 0.6);
     line-height: 145%;
     letter-spacing: 5px;
+    cursor: pointer;
 }
 
 .name {

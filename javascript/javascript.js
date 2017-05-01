@@ -5,6 +5,7 @@ HEADER
 -------------------------*/
 
 function titleRise () {
+    $('.title').addClass('hover');
     $(".title").animate({bottom:"15%", opacity:"1"}, 1000);
 };
 
@@ -14,7 +15,6 @@ setTimeout(function () {
 
 $(window).scroll(function () {
     titleRise();
-
 });
 
 $(".title").hover(function () {
