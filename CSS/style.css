@@ -382,6 +382,12 @@ h1 {
     height: 100vh;
 }
 
+.about-me .row {
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .photo-me {
     width: 200px;
     height: auto;
@@ -396,8 +402,143 @@ h1 {
 
 .about {
     line-height: 145%;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
+}
+
+/* HISTORY LINE */
+
+.line-box {
+    max-width: 500px;
+    height: 500px;
+    margin-top: 25px;
+    margin-left: 50px;
+    position: relative;
+}
+
+.line {
+    position: absolute;
+    border-bottom: 5px solid #581100;
+    bottom: 100px;
+    width: 560px;
+    transform: rotate(-35deg);
+    transform-origin: 0% 0%;
+}
+
+.node,
+.final-node {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 0;
+    margin-bottom: -12.5px;
+    background-color: #581100;
+    float: left;
+}
+
+.node { 
+    margin-right: 47.5px; 
+}
+
+/*.node:hover ~ .history {
+    display: block;
+}*/
+
+.history {
+    position: absolute;
+    transform: rotate(35deg);
+    border: 1px solid #581100;
+    padding: 10px;
+    background-color: #fff3f1;
+    border-radius: 10px;
+}
+
+#primary {
+    bottom: -2100%;
+    left: -7%;
+    display: none;
+}
+
+#high {
+    bottom: 1200%;
+    left: -40%;
+    display: none;
+}
+
+#high:hover {
+    display: block;
+}
+
+#uni {
+    bottom: -2800%;
+    left: 14%;
+    display: none;
+}
+
+uni:hover {
+    display: block;
+}
+
+#resident {
+    bottom: 1600%;
+    left: -35%;
+    display: none;
+}
+
+#resident:hover {
+    display: block;
+}
+
+#compliance {
+    bottom: -2220%;
+    left: 41%;
+    display: none;
+}
+
+#compliance:hover {
+    display: block;
+}
+
+#htmlcss {
+    bottom: 1450%;
+    left: -3%;
+    display: none;
+}
+
+#htmlcss:hover {
+    display: block;
+}
+
+#FCC {
+    bottom: -2400%;
+    left: 65%;
+    display: none;
+}
+
+#FCC:hover {
+    display: block;
+}
+
+#weird {
+    bottom: 1800%;
+    left: 5%;
+    display: none;
+}
+
+#weird:hover {
+    display: block;
+}
+
+.final-node {
+    
+}
+
+.final-node:hover ~ .future {
+    display: block;
+}
+
+.future {
+    display:none;
 }
 
 /*---------------------------------

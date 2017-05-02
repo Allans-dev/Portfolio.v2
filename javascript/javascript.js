@@ -208,5 +208,31 @@ $(".fa-chevron-up").click(function (){
     }, 1000);
 });
 
+/*----------------------------
+ABOUT ME
+----------------------------*/
+    
+/* Timeline Animation */
+    
+$('.node').hover(function () { 
+    $('.node').addClass("animated pulse");
+}, function () {
+    $('.node').removeClass("animated pulse");
+});
+    
+$('#primary-node').hover(function () {
+    //$('#primary').css({display:'block'});
+   // $("#primary").show('size', { origin: ["top", "left"] }, 2000);
+    //$('#primary').show('size', { origin: ["top", "left"] }, 2000);
+}, function (){
+   // $('#primary').hide('size', { origin: ["top", "left"] }, 2000);
+    //$('#primary').css({display:'none'});
+});
+
+$('#primary').hover(function () {
+    $('#primary').css({display:'block'});
+}, function () {
+    $('#primary').css({display:'none'});
+});
 
 }); //doc ready
