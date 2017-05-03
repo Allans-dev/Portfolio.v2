@@ -214,25 +214,84 @@ ABOUT ME
     
 /* Timeline Animation */
     
-$('.node').hover(function () { 
-    $('.node').addClass("animated pulse");
+$('#primary-node').hover(function () { 
+    $('#primary-node').addClass("animated pulse infinite");
+    $('#primary-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#primary').addClass('animated fadeInLeft');
 }, function () {
-    $('.node').removeClass("animated pulse");
+    $('#primary-node').removeClass("animated pulse infinite");
+    $('#primary-node').css({"background-color":"#581100", border: "none"});
+    $('#primary').removeClass('animated fadeInLeft');
 });
     
-$('#primary-node').hover(function () {
-    //$('#primary').css({display:'block'});
-   // $("#primary").show('size', { origin: ["top", "left"] }, 2000);
-    //$('#primary').show('size', { origin: ["top", "left"] }, 2000);
-}, function (){
-   // $('#primary').hide('size', { origin: ["top", "left"] }, 2000);
-    //$('#primary').css({display:'none'});
-});
-
-$('#primary').hover(function () {
-    $('#primary').css({display:'block'});
+$('#high-node').hover(function () { 
+    $('#high-node').addClass("animated pulse infinite");
+    $('#high-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#high').addClass('animated fadeInRight');
 }, function () {
-    $('#primary').css({display:'none'});
+    $('#high-node').removeClass("animated pulse infinite");
+    $('#high-node').css({"background-color":"#581100", border: "none"});
+    $('#high').removeClass('animated fadeInRight');
+});
+    
+$('#uni-node').hover(function () { 
+    $('#uni-node').addClass("animated pulse infinite");
+    $('#uni-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#uni').addClass('animated fadeInLeft');
+}, function () {
+    $('#uni-node').removeClass("animated pulse infinite");
+    $('#uni-node').css({"background-color":"#581100", border: "none"});
+    $('#uni').removeClass('animated fadeInLeft');
 });
 
+$('#resident-node').hover(function () { 
+    $('#resident-node').addClass("animated pulse infinite");
+    $('#resident-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#resident').addClass('animated fadeInRight');
+}, function () {
+    $('#resident-node').removeClass("animated pulse infinite");
+    $('#resident-node').css({"background-color":"#581100", border: "none"});
+    $('#resident').removeClass('animated fadeInRight');
+});
+    
+$('#compliance-node').hover(function () { 
+    $('#compliance-node').addClass("animated pulse infinite");
+    $('#compliance-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#compliance').addClass('animated fadeInLeft');
+}, function () {
+    $('#compliance-node').removeClass("animated pulse infinite");
+    $('#compliance-node').css({"background-color":"#581100", border: "none"});
+    $('#compliance').removeClass('animated fadeInLeft');
+});
+    
+$('#htmlcss-node').hover(function () { 
+    $('#htmlcss-node').addClass("animated pulse infinite");
+    $('#htmlcss-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#htmlcss').addClass('animated fadeInRight');
+}, function () {
+    $('#htmlcss-node').removeClass("animated pulse infinite");
+    $('#htmlcss-node').css({"background-color":"#581100", border: "none"});
+    $('#htmlcss').removeClass('animated fadeInRight');
+});
+    
+$('#FCC-node').hover(function () { 
+    $('#FCC-node').addClass("animated pulse infinite");
+    $('#FCC-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#FCC').addClass('animated fadeInLeft');
+}, function () {
+    $('#FCC-node').removeClass("animated pulse infinite");
+    $('#FCC-node').css({"background-color":"#581100", border: "none"});
+    $('#FCC').removeClass('animated fadeInLeft');
+});
+    
+$('#weird-node').hover(function () { 
+    $('#weird-node').addClass("animated pulse infinite");
+    $('#weird-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
+    $('#weird').addClass('animated fadeInRight');
+}, function () {
+    $('#weird-node').removeClass("animated pulse infinite");
+    $('#weird-node').css({"background-color":"#581100", border: "none"});
+    $('#weird').removeClass('animated fadeInRight');
+});
+    
 }); //doc ready
