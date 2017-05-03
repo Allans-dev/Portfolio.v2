@@ -11,7 +11,7 @@ function titleRise () {
 
 setTimeout(function () {
     titleRise();
-}, 3000);
+}, 4500);
 
 $(window).scroll(function () {
     titleRise();
@@ -297,6 +297,7 @@ $('#weird-node').hover(function () {
 /* FUTURE NODE */
 
 var jello = 0
+var fnodeTrigger = 0
 
 $('#future-node').hover(function () {
     if (jello === 0) {
@@ -311,6 +312,7 @@ $('#future-node').hover(function () {
     
 $('#future-node').click(function (){
     jello = 1;
+    if (fnodeTrigger === 0){
     $('#future-node').animate({
         height: '500', 
         width: '500', 
@@ -322,11 +324,30 @@ $('#future-node').click(function (){
     $('#future-node').css({'transform':'rotate(35deg)', cursor: 'default'});
     $('#future-node').removeClass('infinite animated jello'); 
     $('.line').css({'border-bottom': 'none'});
-    $('.future').css({display:'block'});
-   
-   /*$('.line').css({transform:'rotate(0deg)', 'background-color': '#581100', 'border-radius':'15px'});    
-   $('.line').animate({height: '400px'}, 1000);*/
+    setTimeout(function () {
+    $('#future').addClass('animated fadeInUp');   
+    $('#future').css({'display':'block'});   
+    }, 1500);
+    fnodeTrigger = 1;  
+  } else {
+    jello = 0;
+    $('#future').css({'display':'none'});   
+    $('#future-node').animate({
+        height: '20', 
+        width: '20', 
+        'border-radius':'50%',
+        top: '0',
+        left: '0',
+    }, 1500);
+    setTimeout(function () {
+    $('.node').css({display:'block'});
+    $('#future-node').css({'transform':'rotate(-35deg)'});
+    $('.line').css({'border-bottom': '5px solid #581100'});
+    }, 1500);
+      fnodeTrigger = 0;
+  }
 });
+
     
     
     

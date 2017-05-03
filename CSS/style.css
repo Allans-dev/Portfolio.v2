@@ -503,12 +503,12 @@ h1 {
     opacity: 0;
 }
 
-.final-node {
+#future-node {
     float: right;
     display: block;
 }
 
-.future {
+#future {
     display:none;
 }
 
