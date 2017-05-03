@@ -318,15 +318,17 @@ $('#future-node').click(function (){
         width: '500', 
         'border-radius':'15',
         top: '180',
-        left: '-280'
+        left: '-300'
     }, 1500);
     $('.node').css({display:'none'});
-    $('#future-node').css({'transform':'rotate(35deg)', cursor: 'default'});
+    $('#future-node').css({'transform':'rotate(35deg)'});
     $('#future-node').removeClass('infinite animated jello'); 
     $('.line').css({'border-bottom': 'none'});
+    $('#timeline').addClass('animated fadeOutDown');
     setTimeout(function () {
-    $('#future').addClass('animated fadeInUp');   
-    $('#future').css({'display':'block'});   
+        $('#future').css({'display':'block'}); 
+        $('#future').addClass('animated fadeInUp');  
+        $('#timeline').css({opacity: '0'});
     }, 1500);
     fnodeTrigger = 1;  
   } else {
@@ -340,10 +342,14 @@ $('#future-node').click(function (){
         left: '0',
     }, 1500);
     setTimeout(function () {
-    $('.node').css({display:'block'});
-    $('#future-node').css({'transform':'rotate(-35deg)'});
-    $('.line').css({'border-bottom': '5px solid #581100'});
+        $('#timeline').removeClass('fadeOutDown');
+        $('#timeline').addClass('fadeInUp');
+        $('.node').css({display:'block'});
+        $('#future-node').css({'transform':'rotate(-35deg)'});
+        $('.line').css({'border-bottom': '5px solid #581100'});
+        $('#timeline').css({opacity: '1'});
     }, 1500);
+
       fnodeTrigger = 0;
   }
 });
