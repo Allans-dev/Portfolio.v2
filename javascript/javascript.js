@@ -296,24 +296,34 @@ $('#weird-node').hover(function () {
     
 /* FUTURE NODE */
 
-var jello = 0;
-    console.log(jello);
-if (jello === 0) {
-    $('#future-node').hover(function () {
+var jello = 0
+
+$('#future-node').hover(function () {
+    if (jello === 0) {
         $('#future-node').addClass('infinite animated jello');
         $('#future-node').css({cursor:'pointer'});
-    }, function () {
-        $('#future-node').removeClass('infinite animated jello');
-    });
-}
+    }
+}, function () {
+    $('#future-node').removeClass('infinite animated jello');
+});
 
+
+    
 $('#future-node').click(function (){
     jello = 1;
-    console.log(jello);
+    $('#future-node').animate({
+        height: '500', 
+        width: '500', 
+        'border-radius':'15',
+        top: '180',
+        left: '-280'
+    }, 1500);
     $('.node').css({display:'none'});
+    $('#future-node').css({'transform':'rotate(35deg)', cursor: 'default'});
     $('#future-node').removeClass('infinite animated jello'); 
-   $('.line').css({'border-bottom': 'none', 'transform':'rotate(0deg)'});
-   $('#future-node').animate({height: '300', width: '300', 'border-radius':'15'}, 2000);
+    $('.line').css({'border-bottom': 'none'});
+    $('.future').css({display:'block'});
+   
    /*$('.line').css({transform:'rotate(0deg)', 'background-color': '#581100', 'border-radius':'15px'});    
    $('.line').animate({height: '400px'}, 1000);*/
 });

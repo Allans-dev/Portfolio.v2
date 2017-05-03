@@ -504,10 +504,7 @@ h1 {
 }
 
 .final-node {
-    display: block;
-}
-
-.final-node:hover ~ .future {
+    float: right;
     display: block;
 }
 
