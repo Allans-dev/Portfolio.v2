@@ -294,4 +294,34 @@ $('#weird-node').hover(function () {
     $('#weird').removeClass('animated fadeInRight');
 });
     
+/* FUTURE NODE */
+
+var jello = 0;
+    console.log(jello);
+if (jello === 0) {
+    $('#future-node').hover(function () {
+        $('#future-node').addClass('infinite animated jello');
+        $('#future-node').css({cursor:'pointer'});
+    }, function () {
+        $('#future-node').removeClass('infinite animated jello');
+    });
+}
+
+$('#future-node').click(function (){
+    jello = 1;
+    console.log(jello);
+    $('.node').css({display:'none'});
+    $('#future-node').removeClass('infinite animated jello'); 
+   $('.line').css({'border-bottom': 'none', 'transform':'rotate(0deg)'});
+   $('#future-node').animate({height: '300', width: '300', 'border-radius':'15'}, 2000);
+   /*$('.line').css({transform:'rotate(0deg)', 'background-color': '#581100', 'border-radius':'15px'});    
+   $('.line').animate({height: '400px'}, 1000);*/
+});
+    
+    
+    
+    
+    
+    
+    
 }); //doc ready

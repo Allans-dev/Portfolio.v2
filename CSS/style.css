@@ -437,6 +437,7 @@ h1 {
     background-color: #581100;
     float: left;
     z-index: 100;
+    display: block;
 }
 
 .node { 
@@ -503,7 +504,7 @@ h1 {
 }
 
 .final-node {
-    
+    display: block;
 }
 
 .final-node:hover ~ .future {
