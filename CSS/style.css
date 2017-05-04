@@ -213,6 +213,10 @@ h1 {
     background-color: #e3e3e3;
 }
 
+#skills-waypoint {
+    opacity: 0;
+}
+
 .skills .col-md-3 {
     padding-left: 0;
 }
@@ -530,6 +534,10 @@ h1 {
 .waiting {
     display: inline-block;
     margin-top: 50px;
+}
+
+#me {
+    opacity: 0;
 }
 
 /*---------------------------------

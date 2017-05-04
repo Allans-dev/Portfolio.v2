@@ -80,8 +80,10 @@ SKILLS
 var skillsWay = new Waypoint({
     element: document.getElementById('skills-waypoint'),
     handler: function (){
-        notify('works');
-    }
+        $('#skills-waypoint').css({opacity: '1'});
+        $('#skills-waypoint').addClass('animated bounceInUp');
+    },
+    offset: 500
 });
 
     
@@ -369,8 +371,16 @@ $('#future-node').click(function (){
   }
 });
 
+/* About me Waypoint */
     
-    
+var aboutWay = new Waypoint({
+    element: document.getElementById('me'),
+    handler: function (){
+        $('#me').css({opacity: '1'});
+        $('#me').addClass('animated flipInY');
+    },
+    offset: 100
+});
     
     
     
