@@ -379,7 +379,6 @@ h1 {
 
 .about-me {
     background-color: #ffe6e0;
-    height: 100vh;
 }
 
 .about-me .row {
@@ -404,6 +403,8 @@ h1 {
     line-height: 145%;
     margin: 20px auto;
     width: 70%;
+    text-align: center;
+    font-size: 80%;
 }
 
 /* HISTORY LINE */
@@ -516,13 +517,27 @@ h1 {
     opacity: 1;
 }
 
+#future {
+    max-width: 400px;
+    height: auto;
+    margin: 100px auto; 
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 150%;
+    color: #ffa18b;
+}
+
+.waiting {
+    display: inline-block;
+    margin-top: 50px;
+}
+
 /*---------------------------------
   CONTACT
 ---------------------------------*/
 
 .contact {
     background-color: #fcfcfc;
-    height: 80vh;
 }
 
 .contact h2 {
@@ -551,7 +566,6 @@ label {
 
 footer {
     background-color: #581100;
-    height: 20vh;
     color: #ffcabe;
 }
 

@@ -72,7 +72,19 @@ $("#contact-nav").click(function () {
     }, 1000);
 });
     
+    
+/*----------------------------
+SKILLS
+----------------------------*/
+    
+var skillsWay = new Waypoint({
+    element: document.getElementById('skills-waypoint'),
+    handler: function (){
+        notify('works');
+    }
+});
 
+    
 /*----------------------------
 PORTFOLIO
 ----------------------------*/
@@ -326,6 +338,7 @@ $('#future-node').click(function (){
     $('.line').css({'border-bottom': 'none'});
     $('#timeline').addClass('animated fadeOutDown');
     setTimeout(function () {
+        $('#future').removeClass('fadeOut');   
         $('#future').css({'display':'block'}); 
         $('#future').addClass('animated fadeInUp');  
         $('#timeline').css({opacity: '0'});
@@ -333,7 +346,8 @@ $('#future-node').click(function (){
     fnodeTrigger = 1;  
   } else {
     jello = 0;
-    $('#future').css({'display':'none'});   
+    $('#future').removeClass('fadeInUp');
+    $('#future').addClass('fadeOut');  
     $('#future-node').animate({
         height: '20', 
         width: '20', 
@@ -342,6 +356,7 @@ $('#future-node').click(function (){
         left: '0',
     }, 1500);
     setTimeout(function () {
+        $('#future').css({'display':'none'}); 
         $('#timeline').removeClass('fadeOutDown');
         $('#timeline').addClass('fadeInUp');
         $('.node').css({display:'block'});
