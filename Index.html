@@ -20,13 +20,26 @@
         <div class="row">
             <p class="text-icon" >Allan Cheung</p>
             <ul class="main-nav">
-            <li><a id="home-nav" href="#">home</a></li>
-            <li><a id="skills-nav" href="#">skills</a></li>
-            <li><a id="portfolio-nav" href="#">portfolio</a></li>
-            <li><a id="about-me-nav" href="#">about me</a></li>
-            <li><a id="contact-nav" href="#">contact</a></li>
+            <li><a class="skills-nav" href="#">skills</a></li>
+            <li><a class="portfolio-nav" href="#">portfolio</a></li>
+            <li><a class="about-me-nav" href="#">about me</a></li>
+            <li><a class="contact-nav" href="#">contact</a></li>
             </ul>
         </div>
+        </nav>
+        
+        <nav class="sticky">
+            <div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="cross"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="side-bar">
+                <ul>
+                    <li><a href="#" class="home-nav"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="skills-nav"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="portfolio-nav"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="about-me-nav"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="contact-nav"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </nav>
         
         <div class="pitch-text-box">
@@ -41,27 +54,27 @@
         
     <section class="skills" id="skills">
         <div class="row">
-            
-            <div class="col-md-2">
-            <img src="imgs/HTML5.png" alt="HTML5 logo">
+            <div id="skills-waypoint">
+                <div class="col-md-2">
+                <img src="imgs/HTML5.png" alt="HTML5 logo">
+                </div>
+
+                <div class="col-md-2">
+                <img src="imgs/CSS.3.png" alt="CSS3 logo">
+                </div>
+
+                <div class="col-md-2">
+                <img src="imgs/Javascript.png" alt="javascript logo"> 
+                </div>
+
+                <div class="col-md-3">
+                <img src="imgs/bootstrap-wordmark.png" alt="Bootstrap logo">
+                </div>
+
+                <div class="col-md-2">
+                <img src="imgs/jQuery.gif" alt="jquery logo">
+                </div>
             </div>
-            
-            <div class="col-md-2">
-            <img src="imgs/CSS.3.png" alt="CSS3 logo">
-            </div>
-            
-            <div class="col-md-2">
-            <img src="imgs/Javascript.png" alt="javascript logo"> 
-            </div>
-            
-            <div class="col-md-3">
-            <img src="imgs/bootstrap-wordmark.png" alt="Bootstrap logo">
-            </div>
-            
-            <div class="col-md-2">
-            <img src="imgs/jQuery.gif" alt="jquery logo">
-            </div>
-        
         </div>
         
     </section>
@@ -104,7 +117,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -124,12 +137,10 @@
                 
                 <p>Rounding the seconds in the date function was inconsistant at first but was remedied. The project also demonstrates new HTML5 input types range and number.</p>
 
-                <!--<p>The original time function utilised the date function to provide a countdown point, after careful consideration it was changed to a fixed variable.</p>-->
-
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -151,7 +162,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -173,7 +184,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -218,7 +229,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -240,7 +251,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -262,7 +273,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -284,7 +295,7 @@
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
                     <img src="imgs/line%20break%20left%20white.png" alt="line-break-left">
-                    <a href="#" class="project-btn">To Project</a>
+                    <a href="#" target="_blank" class="project-btn">To Project</a>
                     <img src="imgs/line%20break%20right%20white.png" alt="line-break-right">
                 </div>
 
@@ -296,21 +307,30 @@
     <section class="about-me" id="about-me">
         <div class="row">
             <div class="col-md-5">
-                <div class="row">
-                    <h2>About me</h2>    
-                </div>
+                <div id="me">
+                    <div class="row">
+                        <h2>About me</h2>    
+                    </div>
 
-                <div class="row">
-                    <figure class="photo-me">
-                        <img src="imgs/me.jpg" alt="me">
-                    </figure>
-                </div>
+                    <div class="row">
+                        <figure class="photo-me">
+                            <img src="imgs/me.jpg" alt="me">
+                        </figure>
+                    </div>
 
-                <div class="row">
-                    <div class="about">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus massa mauris, pellentesque egestas purus at, dictum euismod leo. Maecenas suscipit quam nec mollis auctor. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    <div class="row">
+                        <div class="about">
+                            <p>A front-end web developer with a B. Property Economics and property industry experience.</p>
+                            <p>I like the beauty in serendipity and I like the grace of a puzzle piece. I want to learn and I want to share what I learn. I wish to inspire.<br>I'm a serious kinda guy.
+                            </p>
+                            <!--<p>The web is universal and I want to be a part of something that brings together ideas, products, services, and most of all: people.
+                            </p>-->
+                            <!--<p>I see an endless future in web development and enjoy the opportunity it gives to all people.</p>-->
+                            <p>My goal is to combine language, design, and logic to create a complete web browsing experience.</p>
+                        </div>
                     </div>
                 </div>
+            
             </div>
 
             <div class="col-md-7">
@@ -324,17 +344,30 @@
                         <div id="htmlcss-node" class="node"></div>
                         <div id="FCC-node" class="node"></div>
                         <div id="weird-node" class="node"></div>
-                        <div id="future-node" class="final-node">                    
-                            <div id="future">
-                                <ul>
-                                    <li>Modern React with Redux, Udemy</li>
-                                    <li>Advanced React and Redux, Udemy</li>
-                                    <li>Learn and Understand NodeJS, Udemy</li>
-                                    <li>The Complete Developers Guide to MongoDB, Udemy</li>
-                                    <li>Harvard CS50</li>
-                                    <li>Back-end Development Free Code Camp</li>
-                                </ul>
-                            </div>
+                        <div id="future-node" class="final-node">    
+                            
+                            <figure id="future">
+                                
+                                <!-- THINK ABOUT CHANGING (TOO SERIOUS)-->
+                                
+                                <!--<p>
+                                With this Website<br>
+                                I start a new chapter in my Life<br>
+                                with all I have Learnt<br>
+                                to who I have Become<br>
+                                I am Ready<br>
+                                <span class="waiting">The Future is Waiting...</span>
+                                </p>-->
+                                <p>
+                                With this Website<br>
+                                I start a new chapter in my Life<br>
+                                with skills I have learnt<br>
+                                to ideas that inspire me<br>
+                                I am Ready<br>
+                                <span class="waiting">The Future is Waiting...</span>
+                                </p>
+                         
+                            </figure>
                         </div>
                     </div>
                         <div id="primary" class="history">St Peter's and Paul's Primary school,<br>Kiama</div>
@@ -440,6 +473,7 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="/javascript/typer.js"></script>
+        <script src="/javascript/jquery.waypoints.min.js"></script>
         <script src="/javascript/javascript.js"></script>
         
     </body>
