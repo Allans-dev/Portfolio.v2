@@ -81,6 +81,7 @@ header {
     background-size: cover;
     background-image: -webkit-linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/imgs/mac-book.jpg);
     background-image: linear-gradient(rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.6)), url(/imgs/mac-book.jpg);
+    background-attachment: fixed;
 }
 
 /*-----------NAV BAR---------------*/
@@ -121,6 +122,36 @@ header {
     margin-left: 20px;
     font-size: 120%;
 }
+
+/*------------STICKY NAV------------*/
+
+.sticky {
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    text-align: center;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.75);
+    padding: 5px;
+    border-radius: 10px;
+    width: 40px;
+    display: none;
+}
+
+.sticky a { display: block; }
+
+.sticky .fa { font-size: 150%; }
+
+.cross,
+.bars { cursor: pointer; }
+
+.cross { display: none; }
+
+.side-bar ul { list-style: none; }
+
+.side-bar li { margin: 15px 0; }
+
+.side-bar { display: none; }
 
 /*------------PITCH---------------*/
 
@@ -211,6 +242,10 @@ h1 {
 
 .skills {
     background-color: #e3e3e3;
+}
+
+#skills-waypoint {
+    opacity: 0;
 }
 
 .skills .col-md-3 {
@@ -379,7 +414,12 @@ h1 {
 
 .about-me {
     background-color: #ffe6e0;
-    height: 100vh;
+}
+
+.about-me .row {
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
 }
 
 .photo-me {
@@ -396,8 +436,139 @@ h1 {
 
 .about {
     line-height: 145%;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
+    text-align: center;
+    font-size: 80%;
+}
+
+/* HISTORY LINE */
+
+.line-box {
+    max-width: 500px;
+    height: 500px;
+    margin: 25px auto;
+    position: relative;
+    /*border: 1px solid black; */
+}
+
+.line {
+    position: absolute;
+    border-bottom: 5px solid #581100;
+    bottom: 100px;
+    width: 560px;
+    transform: rotate(-35deg);
+    transform-origin: 0% 0%;
+    z-index: 100;
+}
+
+.node,
+.final-node {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 0;
+    margin-bottom: -12.5px;
+    background-color: #581100;
+    float: left;
+    z-index: 100;
+    display: block;
+}
+
+.node { 
+    margin-right: 47.5px; 
+}
+
+.history {
+    position: absolute;
+    border: 1px solid #581100;
+    padding: 10px;
+    background-color: #fff3f1;
+    border-radius: 10px;
+    z-index: 0;
+    letter-spacing: 1px;
+}
+
+#primary {
+    bottom: 7%;
+    left: 2%;
+    opacity: 0;
+}
+
+#high {
+    bottom: 30%;
+    left: -40%;
+    opacity: 0;
+}
+
+#uni {
+    bottom: 22%;
+    left: 24%;
+    opacity: 0;
+}
+
+#resident {
+    bottom: 45%;
+    left: -30%;
+    opacity: 0;
+}
+
+#compliance {
+    bottom: 37.5%;
+    right: -5.5%;
+    opacity: 0;
+}
+
+#htmlcss {
+    bottom: 60%;
+    left: -33%;
+    opacity: 0;
+}
+
+#FCC {
+    bottom: 53.5%;
+    right: -22%;
+    opacity: 0;
+}
+
+
+#weird {
+    bottom: 76%;
+    left: -33%;
+    opacity: 0;
+}
+
+#future-node {
+    float: right;
+    display: block;
+}
+
+#future {
+    display:none;
+}
+
+.timeline {
+    opacity: 1;
+}
+
+#future {
+    max-width: 400px;
+    height: auto;
+    margin: 100px auto; 
+    font-family: 'Sacramento', cursive;
+    text-align: center;
+    font-size: 150%;
+    color: #ffa18b;
+}
+
+.waiting {
+    display: inline-block;
+    margin-top: 50px;
+}
+
+#me {
+    opacity: 0;
 }
 
 /*---------------------------------
@@ -406,7 +577,6 @@ h1 {
 
 .contact {
     background-color: #fcfcfc;
-    height: 80vh;
 }
 
 .contact h2 {
@@ -435,7 +605,6 @@ label {
 
 footer {
     background-color: #581100;
-    height: 20vh;
     color: #ffcabe;
 }
 
