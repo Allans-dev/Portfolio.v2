@@ -34,6 +34,7 @@ $("#title").click(function () {
 });
     
 /*--------TYPER----------*/
+
     
 /*$(".text-icon").hover(function() {
     $(".hover-text").css({'display':'inline'});
@@ -43,48 +44,100 @@ $("#title").click(function () {
     $(".hover-text").css({'display':'none'});
     $(".hover-text").removeClass('typer');
 });*/
+/*--------NAV-BAR----------*/
 
-/*---------NAVBAR--------*/    
-    
-/*$("#home-nav").click(function () {
-    $('html, body').animate({scrollTop: $('#').offset().top
+$(".home-nav").click(function () {
+    $('html, body').animate({scrollTop: $('header').offset().top
     }, 1000);
-}); ----REMINDER-------*/
+});
     
-$("#skills-nav").click(function () {
+$(".skills-nav").click(function () {
     $('html, body').animate({scrollTop: $('#skills').offset().top
     }, 1000);
 });
     
-$("#portfolio-nav").click(function () {
+$(".portfolio-nav").click(function () {
     $('html, body').animate({scrollTop: $('#portfolio').offset().top
     }, 1000);
 });
     
     
-$("#about-me-nav").click(function () {
+$(".about-me-nav").click(function () {
     $('html, body').animate({scrollTop: $('#about-me').offset().top
     }, 1000);
 });
     
-$("#contact-nav").click(function () {
+$(".contact-nav").click(function () {
     $('html, body').animate({scrollTop: $('#contact').offset().top
     }, 1000);
 });
     
+/*--------STICKY-BAR----------*/
+
+$('.bars').click(function (){
+    $('.side-bar').slideToggle();
+    $('.bars').hide();
+    $('.cross').show();
+});
+
+$('.cross').click(function (){
+    $('.side-bar').slideToggle();
+    $('.cross').hide();
+    $('.bars').show();
+});
+
+$('.h1Bot').waypoint(function (direction){
+    if (direction === 'down') {
+        $('.sticky').fadeIn();
+    } else {
+        $('.sticky').fadeOut();
+        $('.side-bar').slideUp();
+        $('.cross').hide();
+        $('.bars').show();
+    }
+});
+
+$(".home-nav").hover(function (){
+    $(".home-nav").addClass("animated pulse");
+}, function (){
+    $(".home-nav").removeClass("animated pulse");
+});
+    
+$(".skills-nav").hover(function (){
+    $(".skills-nav").addClass("animated pulse");
+}, function (){
+    $(".skills-nav").removeClass("animated pulse");
+});
+    
+$(".portfolio-nav").hover(function (){
+    $(".portfolio-nav").addClass("animated pulse");
+}, function (){
+    $(".portfolio-nav").removeClass("animated pulse");
+});
+    
+$(".about-me-nav").hover(function (){
+    $(".about-me-nav").addClass("animated pulse");
+}, function (){
+    $(".about-me-nav").removeClass("animated pulse");
+});
+
+$(".contact-nav").hover(function (){
+    $(".contact-nav").addClass("animated pulse");
+}, function (){
+    $(".contact-nav").removeClass("animated pulse");
+});
     
 /*----------------------------
 SKILLS
 ----------------------------*/
     
-var skillsWay = new Waypoint({
-    element: document.getElementById('skills-waypoint'),
-    handler: function (){
+$('#skills').waypoint(function (direction){
         $('#skills-waypoint').css({opacity: '1'});
         $('#skills-waypoint').addClass('animated bounceInUp');
-    },
+    },{
     offset: 500
-});
+    }
+);
 
     
 /*----------------------------
@@ -373,15 +426,12 @@ $('#future-node').click(function (){
 
 /* About me Waypoint */
     
-var aboutWay = new Waypoint({
-    element: document.getElementById('me'),
-    handler: function (){
+$('#about-me').waypoint(function (direction){
         $('#me').css({opacity: '1'});
         $('#me').addClass('animated flipInY');
-    },
+    }, {
     offset: 100
-});
-    
+});  
     
     
     

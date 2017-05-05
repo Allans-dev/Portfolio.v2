@@ -20,12 +20,26 @@
         <div class="row">
             <p class="text-icon" >Allan Cheung</p>
             <ul class="main-nav">
-            <li><a id="skills-nav" href="#">skills</a></li>
-            <li><a id="portfolio-nav" href="#">portfolio</a></li>
-            <li><a id="about-me-nav" href="#">about me</a></li>
-            <li><a id="contact-nav" href="#">contact</a></li>
+            <li><a class="skills-nav" href="#">skills</a></li>
+            <li><a class="portfolio-nav" href="#">portfolio</a></li>
+            <li><a class="about-me-nav" href="#">about me</a></li>
+            <li><a class="contact-nav" href="#">contact</a></li>
             </ul>
         </div>
+        </nav>
+        
+        <nav class="sticky">
+            <div class="bars"><i class="fa fa-bars" aria-hidden="true"></i></div>
+            <div class="cross"><i class="fa fa-times" aria-hidden="true"></i></div>
+            <div class="side-bar">
+                <ul>
+                    <li><a href="#" class="home-nav"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="skills-nav"><i class="fa fa-code" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="portfolio-nav"><i class="fa fa-briefcase" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="about-me-nav"><i class="fa fa-user" aria-hidden="true"></i></a></li>
+                    <li><a href="#" class="contact-nav"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                </ul>
+            </div>
         </nav>
         
         <div class="pitch-text-box">
@@ -122,8 +136,6 @@
                 <p>The web project allows the user to determine the work and break times when setting a countdown timer. After the timer reaches zero an alert is triggered and the background changes to a relaxing setting before reverting back.</p>
                 
                 <p>Rounding the seconds in the date function was inconsistant at first but was remedied. The project also demonstrates new HTML5 input types range and number.</p>
-
-                <!--<p>The original time function utilised the date function to provide a countdown point, after careful consideration it was changed to a fixed variable.</p>-->
 
                 <div class="project-btn-box">
                     <i class="fa fa-chevron-up fa-2x up" aria-hidden="true"></i>
@@ -308,8 +320,12 @@
 
                     <div class="row">
                         <div class="about">
-                            <p>A front-end web developer with B. Property Economics and property industry experience.</p>
-                            <p>I see great potential in the future of web development and enjoy seeing it reach out to all communities.</p>
+                            <p>A front-end web developer with a B. Property Economics and property industry experience.</p>
+                            <p>I like the beauty in serendipity and I like the grace of a puzzle piece. I want to learn and I want to share what I learn. I wish to inspire.<br>I'm a serious kinda guy.
+                            </p>
+                            <!--<p>The web is universal and I want to be a part of something that brings together ideas, products, services, and most of all: people.
+                            </p>-->
+                            <!--<p>I see an endless future in web development and enjoy the opportunity it gives to all people.</p>-->
                             <p>My goal is to combine language, design, and logic to create a complete web browsing experience.</p>
                         </div>
                     </div>
@@ -330,19 +346,9 @@
                         <div id="weird-node" class="node"></div>
                         <div id="future-node" class="final-node">    
                             
-                            <!--CHANGE PICTURE-->
-                            
                             <figure id="future">
-                                <!--<img src="imgs/Beach%20warm%20rocks.jpg" alt="future quote">-->
-                                <!--<p>
-                                With this website<br>
-                                I close the door to the past,<br>
-                                open the door to the future, <br>
-                                take a deep breath, step on through <br>
-                                and start a new chapter in life.
-                                </p>-->
                                 
-                                <!-- NOT GOOD ENOUGH (TOO SERIOUS)-->
+                                <!-- THINK ABOUT CHANGING (TOO SERIOUS)-->
                                 
                                 <!--<p>
                                 With this Website<br>
@@ -352,15 +358,15 @@
                                 I am Ready<br>
                                 <span class="waiting">The Future is Waiting...</span>
                                 </p>-->
-                                
-                                <!--<ul>
-                                    <li>Modern React with Redux, Udemy</li>
-                                    <li>Advanced React and Redux, Udemy</li>
-                                    <li>Learn and Understand NodeJS, Udemy</li>
-                                    <li>The Complete Developers Guide to MongoDB, Udemy</li>
-                                    <li>Harvard CS50</li>
-                                    <li>Back-end Development Free Code Camp</li>
-                                </ul> -->
+                                <p>
+                                With this Website<br>
+                                I start a new chapter in my Life<br>
+                                with skills I have learnt<br>
+                                to ideas that inspire me<br>
+                                I am Ready<br>
+                                <span class="waiting">The Future is Waiting...</span>
+                                </p>
+                         
                             </figure>
                         </div>
                     </div>
@@ -467,7 +473,7 @@
         
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
         <script src="/javascript/typer.js"></script>
-        <script src="/javascript/noframework.waypoints.min.js"></script>
+        <script src="/javascript/jquery.waypoints.min.js"></script>
         <script src="/javascript/javascript.js"></script>
         
     </body>
