@@ -382,6 +382,12 @@ h1 {
     height: 100vh;
 }
 
+.about-me .row {
+    max-width: 1350px;
+    margin: 0 auto;
+    position: relative;
+}
+
 .photo-me {
     width: 200px;
     height: auto;
@@ -396,8 +402,118 @@ h1 {
 
 .about {
     line-height: 145%;
-    margin: 0 auto;
+    margin: 20px auto;
     width: 70%;
+}
+
+/* HISTORY LINE */
+
+.line-box {
+    max-width: 500px;
+    height: 500px;
+    margin: 25px auto;
+    position: relative;
+    /*border: 1px solid black; */
+}
+
+.line {
+    position: absolute;
+    border-bottom: 5px solid #581100;
+    bottom: 100px;
+    width: 560px;
+    transform: rotate(-35deg);
+    transform-origin: 0% 0%;
+    z-index: 100;
+}
+
+.node,
+.final-node {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    bottom: 0;
+    margin-bottom: -12.5px;
+    background-color: #581100;
+    float: left;
+    z-index: 100;
+    display: block;
+}
+
+.node { 
+    margin-right: 47.5px; 
+}
+
+.history {
+    position: absolute;
+    border: 1px solid #581100;
+    padding: 10px;
+    background-color: #fff3f1;
+    border-radius: 10px;
+    z-index: 0;
+    letter-spacing: 1px;
+}
+
+#primary {
+    bottom: 7%;
+    left: 2%;
+    opacity: 0;
+}
+
+#high {
+    bottom: 30%;
+    left: -40%;
+    opacity: 0;
+}
+
+#uni {
+    bottom: 22%;
+    left: 24%;
+    opacity: 0;
+}
+
+#resident {
+    bottom: 45%;
+    left: -30%;
+    opacity: 0;
+}
+
+#compliance {
+    bottom: 37.5%;
+    right: -5.5%;
+    opacity: 0;
+}
+
+#htmlcss {
+    bottom: 60%;
+    left: -33%;
+    opacity: 0;
+}
+
+#FCC {
+    bottom: 53.5%;
+    right: -22%;
+    opacity: 0;
+}
+
+
+#weird {
+    bottom: 76%;
+    left: -33%;
+    opacity: 0;
+}
+
+#future-node {
+    float: right;
+    display: block;
+}
+
+#future {
+    display:none;
+}
+
+.timeline {
+    opacity: 1;
 }
 
 /*---------------------------------
