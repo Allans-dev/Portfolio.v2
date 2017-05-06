@@ -79,6 +79,9 @@
         float: none;
         margin: 0 auto;
     }
+    .h1Mid {
+        top: 55%;
+    }
 
 /* 481-767 */
 @media only screen and (max-width: 767px) {
@@ -119,10 +122,6 @@
     
     .main-nav {
         display: none;
-    }
-    
-    #scale {
-        transform: scale(.6);
     }
     
     .project-des img {
