@@ -629,11 +629,11 @@ footer {
 .social-media li{
     list-style: none;
     float: right;
+    margin-left: 25px;
 }
 
 .social-media .fa {
     font-size: 150%;
-    margin-left: 25px;
     color: #ffcabe;
 }
 

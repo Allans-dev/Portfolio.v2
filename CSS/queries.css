@@ -12,7 +12,57 @@
 /* 768-1023 */
 @media only screen and (max-width: 1023px) {
     
+    section {
+        padding: 40px 0;
+    }
+    
+    body {
+        font-size: 18px;
+    }
+    
+    .skills img {
+        margin: 15px auto;
+    }
+    
+    .project-des img {
+        width: 100px;
+    }
+    
+    .photo-me {
+        width: 180px;
+    }
+    
+    .skills img {
+        max-width: 200px;
+        height: 112px;
+    }
+    .skills .col-sm-2 {
+        margin: 0 30px;
+    } 
 
+    .skills .col-sm-1 {
+        margin: 0 30px;
+    }
+    
+    .col-center {
+        margin: 0 auto;
+        float: none;
+    }
+    .mission {
+        text-align: center;
+    }
+    .social-media li{
+        float: none;
+        display: inline-block;
+        
+    }
+    .social-media {
+        margin: 0;
+        text-align: center;
+    }
+    .social-media li:first-child {
+        margin-left: 0;
+    }
     
 }
 
@@ -20,7 +70,7 @@
 /* 481-767 */
 @media only screen and (max-width: 767px) {
     
-}
+
 
 
 /* 0-480 */
