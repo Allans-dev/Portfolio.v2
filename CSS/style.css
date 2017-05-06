@@ -246,21 +246,14 @@ h1 {
 
 #skills-waypoint {
     opacity: 0;
-}
-
-.skills .col-md-3 {
-    padding-left: 0;
-}
-
-.skills .col-md-2 {
-    margin: 0 10px;
+    text-align: center;
 }
 
 .skills img {
-    display: block;
+    display: inline-block;
     max-width: 285px;
     height: 160px;
-    margin: 0 auto;
+    margin: 0 25px;
 }
 
 /*---------------------------------
@@ -444,12 +437,16 @@ h1 {
 
 /* HISTORY LINE */
 
+#scale {
+
+}
+
 .line-box {
     max-width: 500px;
     height: 500px;
     margin: 25px auto;
     position: relative;
-    /*border: 1px solid black; */
+    /*border: 1px solid black;*/
 }
 
 .line {
