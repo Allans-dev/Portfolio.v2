@@ -16,7 +16,7 @@
         padding: 40px 0;
     }
     
-    body {
+    body, html {
         font-size: 18px;
     }
     
@@ -70,7 +70,13 @@
 /* 481-767 */
 @media only screen and (max-width: 767px) {
     
-
+    body, html {
+        font-size: 16px;
+    }
+    
+    .photo-me {
+        width: 140px;
+    }
 
 
 /* 0-480 */
