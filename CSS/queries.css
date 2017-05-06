@@ -1,0 +1,30 @@
+
+/* 1024-1200 */
+@media only screen and (max-width: 1200px) {
+    
+    .row { padding: 0 2%;}
+    
+    #contact .row {
+        width: 100%;
+    }
+}
+
+/* 768-1023 */
+@media only screen and (max-width: 1023px) {
+    
+
+    
+}
+
+
+/* 481-767 */
+@media only screen and (max-width: 767px) {
+    
+}
+
+
+/* 0-480 */
+@media only screen and (max-width: 480px) {
+    
+}
+

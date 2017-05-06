@@ -182,14 +182,14 @@ h1 {
 }
 
 .h1Top {
-    margin-left: 20px;
+    margin-left: 4%;
 }
 
 .h1Bot {
     position: absolute;
     text-align: right;
     bottom: 0;
-    right: 25px;
+    right: 4%;
 }
 
 .title:link,
@@ -369,8 +369,8 @@ h1 {
     -webkit-transition: border 0.3;
     transition: border 0.3;
     float: right;
-    right: 40px;
-    top: 30px;
+    right: 5%;
+    top: 35px;
     font-size: 90%;
 }
 
@@ -585,11 +585,14 @@ h1 {
 
 .contact-form input,
 .contact-form textarea{
-    width: 100%;
+    width: 255px;
 }
 
 .contact-form .row {
-    margin: 15px 0;
+    margin: 15px auto;
+}
+
+.col-center { 
 }
 
 label {
@@ -597,7 +600,7 @@ label {
     font-weight: 400;
 }
 
-.contact-form input[type="submit"] { width: 60%; }
+.contact-form input[type="submit"] { width: 150px; }
 
 /*---------------------------------
   FOOTER
@@ -615,6 +618,7 @@ footer {
     margin-top: 35px;
     margin-left: -30px;
     font-style: italic;
+    
 }
 
 .social-media {
