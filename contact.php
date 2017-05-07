@@ -31,7 +31,4 @@ $m->Body = 'From:' . $fields["name"] . '(' . $fields["email"] . ') <p>' . $field
 $m->FromName = 'Portfolio';
 $m->AddAddress('allanswebdev@gmail.com', 'Allan Cheung');
 
-if ($m->send()) {
-    
-    
-}
+echo "Message sent! <a href='allancheung.com'>Click here to return to page</a>"

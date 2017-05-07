@@ -634,6 +634,12 @@ footer {
     color: #ffcabe;
 }
 
+.source a{
+    margin-top: 15px;
+    float: right;
+    color: #ffcabe;
+}
+
 .social-media .fa-facebook-square:hover { color: #3b5998; }
 
 .social-media .fa-twitter:hover { color: #00aced; }

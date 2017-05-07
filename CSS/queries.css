@@ -63,6 +63,11 @@
         font-size: 110%;
     }
     
+    .source a {
+        float: none;
+        margin: 5px auto;
+    }
+    
     .pitch-text-box {
         width: 60%;
     }
