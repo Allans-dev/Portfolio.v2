@@ -121,6 +121,7 @@ header {
     font-family: 'Sacramento', cursive;
     margin-left: 20px;
     font-size: 120%;
+    font-style: italic;
 }
 
 /*------------STICKY NAV------------*/
@@ -509,7 +510,7 @@ h1 {
 
 #resident {
     bottom: 45%;
-    left: -30%;
+    left: -33%;
     opacity: 0;
 }
 
