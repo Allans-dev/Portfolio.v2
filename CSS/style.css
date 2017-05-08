@@ -266,10 +266,12 @@ h1 {
 }
 
 .project-showcase {
+    position: relative;
     width: 100%;
     margin: 0;
     list-style: none;
     height: auto;
+    z-index: 400;
 }
 
 .project-showcase li {
