@@ -104,7 +104,7 @@
 /* 481-767 */
 @media only screen and (max-width: 767px) {
     
-    #scale { transform:scale(.8); }
+    #scale { -webkit-transform:scale(.8); transform:scale(.8); }
     
     #primary {
         bottom: 8.5%;
@@ -163,6 +163,11 @@
     .contact h2 {
         text-align: left;
         margin-left: 40px;
+    }
+    
+    .contact-form input[type="submit"] { 
+        width: 150px; 
+        margin-bottom: 15px;
     }
     
 }

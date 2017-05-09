@@ -457,7 +457,9 @@ h1 {
     border-bottom: 5px solid #581100;
     bottom: 100px;
     width: 560px;
+    -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
+    -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
     z-index: 100;
 }
@@ -600,7 +602,11 @@ label {
     font-weight: 400;
 }
 
-.contact-form input[type="submit"] { width: 150px; }
+.contact-form input[type="submit"] { width: 80%; }
+
+.cv-btn {
+    padding: 0 4px;
+}
 
 /*---------------------------------
   FOOTER
