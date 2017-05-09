@@ -121,6 +121,7 @@ header {
     font-family: 'Sacramento', cursive;
     margin-left: 20px;
     font-size: 120%;
+    font-style: italic;
 }
 
 /*------------STICKY NAV------------*/
@@ -177,19 +178,19 @@ h1 {
 
 .pitch-text-box {
     width: 40%;
-    height: 40%;
+    height: 50%;
     top: 45%;
 }
 
 .h1Top {
-    margin-left: 20px;
+    margin-left: 4%;
 }
 
 .h1Bot {
     position: absolute;
     text-align: right;
     bottom: 0;
-    right: 25px;
+    right: 4%;
 }
 
 .title:link,
@@ -246,21 +247,14 @@ h1 {
 
 #skills-waypoint {
     opacity: 0;
-}
-
-.skills .col-md-3 {
-    padding-left: 0;
-}
-
-.skills .col-md-2 {
-    margin: 0 10px;
+    text-align: center;
 }
 
 .skills img {
-    display: block;
+    display: inline-block;
     max-width: 285px;
     height: 160px;
-    margin: 0 auto;
+    margin: 0 25px;
 }
 
 /*---------------------------------
@@ -273,10 +267,12 @@ h1 {
 }
 
 .project-showcase {
+    position: relative;
     width: 100%;
     margin: 0;
     list-style: none;
     height: auto;
+    z-index: 400;
 }
 
 .project-showcase li {
@@ -369,8 +365,8 @@ h1 {
     -webkit-transition: border 0.3;
     transition: border 0.3;
     float: right;
-    right: 40px;
-    top: 30px;
+    right: 5%;
+    top: 35px;
     font-size: 90%;
 }
 
@@ -444,12 +440,16 @@ h1 {
 
 /* HISTORY LINE */
 
+#scale {
+
+}
+
 .line-box {
     max-width: 500px;
     height: 500px;
     margin: 25px auto;
     position: relative;
-    /*border: 1px solid black; */
+    /*border: 1px solid black;*/
 }
 
 .line {
@@ -457,7 +457,9 @@ h1 {
     border-bottom: 5px solid #581100;
     bottom: 100px;
     width: 560px;
+    -webkit-transform: rotate(-35deg);
     transform: rotate(-35deg);
+    -webkit-transform-origin: 0% 0%;
     transform-origin: 0% 0%;
     z-index: 100;
 }
@@ -510,7 +512,7 @@ h1 {
 
 #resident {
     bottom: 45%;
-    left: -30%;
+    left: -33%;
     opacity: 0;
 }
 
@@ -585,11 +587,14 @@ h1 {
 
 .contact-form input,
 .contact-form textarea{
-    width: 100%;
+    width: 255px;
 }
 
 .contact-form .row {
-    margin: 15px 0;
+    margin: 15px auto;
+}
+
+.col-center { 
 }
 
 label {
@@ -597,7 +602,11 @@ label {
     font-weight: 400;
 }
 
-.contact-form input[type="submit"] { width: 60%; }
+.contact-form input[type="submit"] { width: 80%; }
+
+.cv-btn {
+    padding: 0 10px;
+}
 
 /*---------------------------------
   FOOTER
@@ -615,6 +624,7 @@ footer {
     margin-top: 35px;
     margin-left: -30px;
     font-style: italic;
+    
 }
 
 .social-media {
@@ -625,11 +635,17 @@ footer {
 .social-media li{
     list-style: none;
     float: right;
+    margin-left: 25px;
 }
 
 .social-media .fa {
     font-size: 150%;
-    margin-left: 25px;
+    color: #ffcabe;
+}
+
+.source a{
+    margin-top: 15px;
+    float: right;
     color: #ffcabe;
 }
 

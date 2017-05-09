@@ -52,7 +52,7 @@ $(".home-nav").click(function () {
 });
     
 $(".skills-nav").click(function () {
-    $('html, body').animate({scrollTop: $('#skills').offset().top
+    $('html, body').animate({scrollTop: $('#skills').offset().top -200
     }, 1000);
 });
     
