@@ -100,6 +100,10 @@
         bottom: 75.5%;
         left: -24%;
     }
+    
+    .line-box { margin: 5px auto; }
+    
+    .about { margin: 5px auto; }
 }
 /* 481-767 */
 @media only screen and (max-width: 767px) {
@@ -179,9 +183,49 @@
 /* 0-500 */
 @media only screen and (max-width: 500px) {
     
-    #scale,
+    #scale { -webkit-transform:scale(.6); transform:scale(.6); }
+    
+    #primary {
+        bottom: 8.5%;
+        left: 2%;
+    }
+
+    #high {
+        bottom: 29%;
+        left: -34.5%;
+    }
+
+    #uni {
+        bottom: 24.5%;
+        left: 27%;
+    }
+
+    #resident {
+        bottom: 44.5%;
+        left: -24%;
+    }
+
+    #compliance {
+        bottom: 39.5%;
+        right: -6%;
+    }
+
+    #htmlcss {
+        bottom: 60%;
+        left: -19%;
+    }
+
+    #FCC {
+        bottom: 55%;
+        right: -26%;
+    }
+
+    #weird {
+        bottom: 75.5%;
+        left: -16%;
+    }
+
     .main-nav,
-    #timeline,
     .project-des img {
        display: none; 
     }
