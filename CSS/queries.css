@@ -170,6 +170,11 @@
         margin-bottom: 15px;
     }
     
+    .FCC-box {
+        text-align: left;
+        margin: 10px auto;
+    }
+    
 }
 /* 0-500 */
 @media only screen and (max-width: 500px) {
@@ -180,6 +185,11 @@
     .project-des img {
        display: none; 
     }
+    
+    .title:link,
+    .title:visited {
+        left: 10%;
+}
 
 }
 

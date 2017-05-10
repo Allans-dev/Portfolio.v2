@@ -355,18 +355,19 @@ h1 {
     border-color: #9c1e00;
 }
 
+.FCC-box {
+    text-align: right;
+    margin: 25px auto;
+    padding-right: 5px;
+}
+
 .FCC-link:link,
 .FCC-link:visited {
-    position: absolute;
-    display: inline-block;
-    margin: 0 auto;
+    position: relative;
     padding-bottom: 8px;
     border-bottom: 2px solid transparent;
     -webkit-transition: border 0.3;
     transition: border 0.3;
-    float: right;
-    right: 5%;
-    top: 35px;
     font-size: 90%;
 }
 
