@@ -183,9 +183,12 @@
 /* 0-500 */
 @media only screen and (max-width: 500px) {
     
-    #scale { -webkit-transform:scale(.6); transform:scale(.6); }
+    #scale { 
+        -webkit-transform:scale(.6); transform:scale(.6);
+        display:none;
+    }
     
-    #primary {
+    /*#primary {
         bottom: 8.5%;
         left: 2%;
     }
@@ -223,9 +226,10 @@
     #weird {
         bottom: 75.5%;
         left: -16%;
-    }
+    }*/
 
     .main-nav,
+    #timeline,
     .project-des img {
        display: none; 
     }

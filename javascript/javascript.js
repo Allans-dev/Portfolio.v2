@@ -25,7 +25,7 @@ $(".title").hover(function () {
             if (document.querySelector(".title").innerHTML === "") {
             $('.title').html('<span class="name">Allan Cheung</span>Front-End Web Development');
             }
-        }, 300);
+        }, 400);
 });
     
 $("#title").click(function () {
@@ -430,7 +430,7 @@ $('#about-me').waypoint(function (direction){
         $('#me').css({opacity: '1'});
         $('#me').addClass('animated flipInY');
     }, {
-    offset: 100
+    offset: 250
 });  
     
     
