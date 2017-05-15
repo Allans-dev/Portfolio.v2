@@ -448,12 +448,6 @@ h1 {
     margin: 30px auto;
 }
 
-.time-box {
-    position: relative;
-    margin: 12.5px 0;
-    /*bottom: -25px;*/
-}
-
 .node {
     position: relative;
     width: 20px;
@@ -485,6 +479,62 @@ h1 {
     border-radius: 10px;
     letter-spacing: 1px;
     display: inline-block;
+}
+
+.time-box {
+    position: absolute;
+    /*margin: 12.5px 0;*/
+    bottom: -25px;
+}
+
+#high-box {
+    bottom: 40px;
+}
+
+#uni-box {
+    bottom: 110px;
+}
+
+#resident-box {
+    bottom: 180px;
+}
+
+#compliance-box {
+    bottom: 250px;
+}
+
+#FCC-box {
+    bottom: 320px;
+}
+
+#htmlcss-box {
+    bottom: 390px;
+}
+
+#weird-box {
+    bottom: 460px;
+}
+
+#future {
+    display: none;
+}
+
+#final-line {
+    width: 50%;
+    height: 0;
+    border-top: 4px solid #581100;
+}
+
+#future-node {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    left: 50%;
+    margin-left: -15px;
+    margin-top: -17px;
+    background-color: #581100;
+    
 }
 
 /*
