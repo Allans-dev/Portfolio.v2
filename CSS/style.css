@@ -442,7 +442,7 @@ h1 {
 
 #timeline-box {
     position: relative;
-    max-width: 640px;
+    max-width: 560px;
     height: 560px;
     border-left: 4px solid #581100;
     margin: 30px auto;
@@ -479,6 +479,7 @@ h1 {
     border-radius: 10px;
     letter-spacing: 1px;
     display: inline-block;
+    font-size: 80%;
 }
 
 .time-box {
