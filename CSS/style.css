@@ -440,16 +440,59 @@ h1 {
 
 /* HISTORY LINE */
 
-#scale {
-
+#timeline-box {
+    position: relative;
+    max-width: 640px;
+    height: 560px;
+    border-left: 4px solid #581100;
+    margin: 30px auto;
 }
 
+.time-box {
+    position: relative;
+    margin: 12.5px 0;
+    /*bottom: -25px;*/
+}
+
+.node {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-left: -12px;
+    margin-right: 0px;
+    margin-top: 15px;
+    background-color: #581100;
+    display: inline-block;
+}
+
+.line {
+    position: relative;
+    display: inline-block;
+    height: 0px;
+    width: 35px;
+    border-bottom: 4px solid #581100;
+    margin: 0 -6px 6px -6px;
+    padding: 0px;
+}
+
+.history {
+    position: relative;
+    border: 1px solid #581100;
+    padding: 10px;
+    height: 50px;
+    background-color: #fff3f1;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    display: inline-block;
+}
+
+/*
 .line-box {
     max-width: 500px;
     height: 500px;
     margin: 25px auto;
     position: relative;
-    /*border: 1px solid black;*/
 }
 
 .line {
@@ -466,31 +509,15 @@ h1 {
 
 .node,
 .final-node {
-    position: relative;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    bottom: 0;
-    margin-bottom: -12.5px;
-    background-color: #581100;
     float: left;
     z-index: 100;
-    display: block;
 }
 
 .node { 
     margin-right: 47.5px; 
 }
 
-.history {
-    position: absolute;
-    border: 1px solid #581100;
-    padding: 10px;
-    background-color: #fff3f1;
-    border-radius: 10px;
-    z-index: 0;
-    letter-spacing: 1px;
-}
+
 
 #primary {
     bottom: 7%;
@@ -548,7 +575,7 @@ h1 {
 
 #future {
     display:none;
-}
+} */
 
 .timeline {
     opacity: 1;
