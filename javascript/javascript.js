@@ -285,18 +285,18 @@ ABOUT ME
 /* FUTURE NODE */
 
 var fnodeTrigger = 0;
+var once = 0;
 
 
 
 $('#future-node').click(function (){
     if (fnodeTrigger === 0){
     $('#future-node').removeClass('infinite animated jello');
-    //$('#timeline').css({'border-left': 'none'});
     $('#timeline').animate({height: '0'});
     $('#final-line').animate({width: '0'});
     $('#future-node').animate({left: '0'});
     $('.time-box').css({display: 'none'});    
-    $('.time-box').removeClass('animated');  
+    $('.time-box').removeClass('animated fadeInUp');  
     $('#future-node').animate({
         height: '500',
         width: '500',
@@ -331,7 +331,7 @@ $('#future-node').click(function (){
 /* About me Waypoint */
 
 $('#about-me').waypoint(function (direction){
-
+    if (once !== 1){
     //description
         $('#me').css({opacity: '1'});
         $('#me').addClass('animated flipInY');
@@ -393,12 +393,13 @@ $('#about-me').waypoint(function (direction){
             }, 2400);
             
             setTimeout (function (){
-                $('#future-node').css({display: 'block'});
-                $('#future-node').addClass('infinite animated jello');
+                    $('#future-node').css({display: 'block'});
+                    $('#future-node').addClass('infinite animated jello');
+                    once = 1;
             }, 3000);        
-            
+        
         });
-
+    }
     }, {
     offset: 100
 });
