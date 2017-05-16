@@ -27,15 +27,15 @@ $(".title").hover(function () {
             }
         }, 300);
 });
-    
+
 $("#title").click(function () {
     $('html, body').animate({scrollTop: $('#portfolio').offset().top
     }, 1000);
 });
-    
+
 /*--------TYPER----------*/
 
-    
+
 /*$(".text-icon").hover(function() {
     $(".hover-text").css({'display':'inline'});
     $(".hover-text").addClass('typer');
@@ -50,28 +50,28 @@ $(".home-nav").click(function () {
     $('html, body').animate({scrollTop: $('header').offset().top
     }, 1000);
 });
-    
+
 $(".skills-nav").click(function () {
     $('html, body').animate({scrollTop: $('#skills').offset().top -200
     }, 1000);
 });
-    
+
 $(".portfolio-nav").click(function () {
     $('html, body').animate({scrollTop: $('#portfolio').offset().top
     }, 1000);
 });
-    
-    
+
+
 $(".about-me-nav").click(function () {
     $('html, body').animate({scrollTop: $('#about-me').offset().top
     }, 1000);
 });
-    
+
 $(".contact-nav").click(function () {
     $('html, body').animate({scrollTop: $('#contact').offset().top
     }, 1000);
 });
-    
+
 /*--------STICKY-BAR----------*/
 
 $('.bars').click(function (){
@@ -102,19 +102,19 @@ $(".home-nav").hover(function (){
 }, function (){
     $(".home-nav").removeClass("animated pulse");
 });
-    
+
 $(".skills-nav").hover(function (){
     $(".skills-nav").addClass("animated pulse");
 }, function (){
     $(".skills-nav").removeClass("animated pulse");
 });
-    
+
 $(".portfolio-nav").hover(function (){
     $(".portfolio-nav").addClass("animated pulse");
 }, function (){
     $(".portfolio-nav").removeClass("animated pulse");
 });
-    
+
 $(".about-me-nav").hover(function (){
     $(".about-me-nav").addClass("animated pulse");
 }, function (){
@@ -126,11 +126,11 @@ $(".contact-nav").hover(function (){
 }, function (){
     $(".contact-nav").removeClass("animated pulse");
 });
-    
+
 /*----------------------------
 SKILLS
 ----------------------------*/
-    
+
 $('#skills').waypoint(function (direction){
         $('#skills-waypoint').css({opacity: '1'});
         $('#skills-waypoint').addClass('animated bounceInUp');
@@ -139,11 +139,11 @@ $('#skills').waypoint(function (direction){
     }
 );
 
-    
+
 /*----------------------------
 PORTFOLIO
 ----------------------------*/
-    
+
 /*SLIDE ANIMATION*/
 
 $("#simon-icon").click(function () {
@@ -222,7 +222,6 @@ $("#quote-icon").click(function () {
 });
 
 $("#weather-icon").click(function () {
-    //$(".portfolio").css({height:"auto"});
     if (document.querySelector('#weather-des').style.display === 'block') {
         $('#weather-des').slideUp();
         $('html, body').animate({scrollTop: $('#portfolio').offset().top
@@ -266,9 +265,9 @@ $("#twitch-icon").click(function () {
         }, 410);
     }
 });
-    
+
 /*UP BTN*/
-    
+
 $(".fa-chevron-up").click(function (){
     $("[id$=des]").slideUp();
     $('html, body').animate({scrollTop: $('#portfolio').offset().top
@@ -278,146 +277,51 @@ $(".fa-chevron-up").click(function (){
 /*----------------------------
 ABOUT ME
 ----------------------------*/
-    
-/* Timeline Animation */
-    
-$('#primary-node').hover(function () { 
-    $('#primary-node').addClass("animated pulse infinite");
-    $('#primary-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#primary').addClass('animated fadeInLeft');
-}, function () {
-    $('#primary-node').removeClass("animated pulse infinite");
-    $('#primary-node').css({"background-color":"#581100", border: "none"});
-    $('#primary').removeClass('animated fadeInLeft');
-});
-    
-$('#high-node').hover(function () { 
-    $('#high-node').addClass("animated pulse infinite");
-    $('#high-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#high').addClass('animated fadeInRight');
-}, function () {
-    $('#high-node').removeClass("animated pulse infinite");
-    $('#high-node').css({"background-color":"#581100", border: "none"});
-    $('#high').removeClass('animated fadeInRight');
-});
-    
-$('#uni-node').hover(function () { 
-    $('#uni-node').addClass("animated pulse infinite");
-    $('#uni-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#uni').addClass('animated fadeInLeft');
-}, function () {
-    $('#uni-node').removeClass("animated pulse infinite");
-    $('#uni-node').css({"background-color":"#581100", border: "none"});
-    $('#uni').removeClass('animated fadeInLeft');
-});
 
-$('#resident-node').hover(function () { 
-    $('#resident-node').addClass("animated pulse infinite");
-    $('#resident-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#resident').addClass('animated fadeInRight');
-}, function () {
-    $('#resident-node').removeClass("animated pulse infinite");
-    $('#resident-node').css({"background-color":"#581100", border: "none"});
-    $('#resident').removeClass('animated fadeInRight');
-});
-    
-$('#compliance-node').hover(function () { 
-    $('#compliance-node').addClass("animated pulse infinite");
-    $('#compliance-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#compliance').addClass('animated fadeInLeft');
-}, function () {
-    $('#compliance-node').removeClass("animated pulse infinite");
-    $('#compliance-node').css({"background-color":"#581100", border: "none"});
-    $('#compliance').removeClass('animated fadeInLeft');
-});
-    
-$('#htmlcss-node').hover(function () { 
-    $('#htmlcss-node').addClass("animated pulse infinite");
-    $('#htmlcss-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#htmlcss').addClass('animated fadeInRight');
-}, function () {
-    $('#htmlcss-node').removeClass("animated pulse infinite");
-    $('#htmlcss-node').css({"background-color":"#581100", border: "none"});
-    $('#htmlcss').removeClass('animated fadeInRight');
-});
-    
-$('#FCC-node').hover(function () { 
-    $('#FCC-node').addClass("animated pulse infinite");
-    $('#FCC-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#FCC').addClass('animated fadeInLeft');
-}, function () {
-    $('#FCC-node').removeClass("animated pulse infinite");
-    $('#FCC-node').css({"background-color":"#581100", border: "none"});
-    $('#FCC').removeClass('animated fadeInLeft');
-});
-    
-$('#weird-node').hover(function () { 
-    $('#weird-node').addClass("animated pulse infinite");
-    $('#weird-node').css({border: "2px solid #9c1e00", "background-color":"#fff3f1"});
-    $('#weird').addClass('animated fadeInRight');
-}, function () {
-    $('#weird-node').removeClass("animated pulse infinite");
-    $('#weird-node').css({"background-color":"#581100", border: "none"});
-    $('#weird').removeClass('animated fadeInRight');
-});
-    
+/* Timeline Animation */
+
+
+
 /* FUTURE NODE */
 
-var jello = 0
-var fnodeTrigger = 0
-
-$('#future-node').hover(function () {
-    if (jello === 0) {
-        $('#future-node').addClass('infinite animated jello');
-        $('#future-node').css({cursor:'pointer'});
-    }
-}, function () {
-    $('#future-node').removeClass('infinite animated jello');
-});
+var fnodeTrigger = 0;
+var once = 0;
 
 
-    
+
 $('#future-node').click(function (){
-    jello = 1;
     if (fnodeTrigger === 0){
+    $('#future-node').removeClass('infinite animated jello');
+    $('#timeline').animate({height: '0'});
+    $('#final-line').animate({width: '0'});
+    $('#future-node').animate({left: '0'});
+    $('.time-box').css({display: 'none'});    
+    $('.time-box').removeClass('animated fadeInUp');  
     $('#future-node').animate({
-        height: '500', 
-        width: '500', 
+        height: '500',
+        width: '500',
         'border-radius':'15',
-        top: '180',
-        left: '-300'
-    }, 1500);
-    $('.node').css({display:'none'});
-    $('#future-node').css({'transform':'rotate(35deg)'});
-    $('#future-node').removeClass('infinite animated jello'); 
-    $('.line').css({'border-bottom': 'none'});
-    $('#timeline').addClass('animated fadeOutDown');
+    }, 1500);    
     setTimeout(function () {
-        $('#future').removeClass('fadeOut');   
-        $('#future').css({'display':'block'}); 
-        $('#future').addClass('animated fadeInUp');  
-        $('#timeline').css({opacity: '0'});
+        $('#future').removeClass('fadeOut');
+        $('#future').css({'display':'block'});
+        $('#future').addClass('animated fadeInUp');
     }, 1500);
-    fnodeTrigger = 1;  
+    fnodeTrigger = 1;
   } else {
-    jello = 0;
     $('#future').removeClass('fadeInUp');
-    $('#future').addClass('fadeOut');  
+    $('#future').addClass('fadeOut');
     $('#future-node').animate({
-        height: '20', 
-        width: '20', 
+        height: '30',
+        width: '30',
         'border-radius':'50%',
-        top: '0',
-        left: '0',
+        left: '42%',
     }, 1500);
     setTimeout(function () {
-        $('#future').css({'display':'none'}); 
-        $('#timeline').removeClass('fadeOutDown');
-        $('#timeline').addClass('fadeInUp');
-        $('.node').css({display:'block'});
-        $('#future-node').css({'transform':'rotate(-35deg)'});
-        $('.line').css({'border-bottom': '5px solid #581100'});
-        $('#timeline').css({opacity: '1'});
+        $('#final-line').animate({width: '42%'});
+        $('.time-box').css({display: 'block'});    
+        $('.time-box').addClass('animated fadeInUp');
+        $('#timeline').animate({height: '560'});
     }, 1500);
 
       fnodeTrigger = 0;
@@ -425,15 +329,82 @@ $('#future-node').click(function (){
 });
 
 /* About me Waypoint */
-    
+
 $('#about-me').waypoint(function (direction){
+    if (once !== 1){
+    //description
         $('#me').css({opacity: '1'});
         $('#me').addClass('animated flipInY');
+
+    //timeline
+        $('#timeline-box').animate({
+            height: '600',
+            top: '0'
+        }, 1500, function (){
+            
+            $('#weird').addClass('animated flipInX');
+            $('#weird').css({opacity:'1'});
+            $('#weird-line').animate({width:'36'});            
+            
+            setTimeout (function () {
+                $('#htmlcss').addClass('animated flipInX');
+                $('#htmlcss').css({opacity:'1'});
+                $('#htmlcss-line').animate({width:'36'});     
+            }, 300);
+           
+            setTimeout (function () {
+                $('#FCC').addClass('animated flipInX');
+                $('#FCC').css({opacity:'1'});
+                $('#FCC-line').animate({width:'36'});     
+            }, 600);
+            
+            setTimeout (function () {
+                $('#compliance').addClass('animated flipInX');
+                $('#compliance').css({opacity:'1'});
+                $('#compliance-line').animate({width:'36'});     
+            }, 900);
+            
+            setTimeout (function () {
+                $('#resident').addClass('animated flipInX');
+                $('#resident').css({opacity:'1'});
+                $('#resident-line').animate({width:'36'});     
+            }, 1200);
+            
+            setTimeout (function () {
+                $('#uni').addClass('animated flipInX');
+                $('#uni').css({opacity:'1'});
+                $('#uni-line').animate({width:'36'});     
+            }, 1500);
+            
+            setTimeout (function () {
+                $('#high').addClass('animated flipInX');
+                $('#high').css({opacity:'1'});
+                $('#high-line').animate({width:'36'});     
+            }, 1800);
+            
+            setTimeout (function () {
+                $('#primary').addClass('animated flipInX');
+                $('#primary').css({opacity:'1'});
+                $('#primary-line').animate({width:'36'});     
+            }, 2100);
+            
+            setTimeout (function (){
+                $('#final-line').animate({width: '42%'}, 600);
+            }, 2400);
+            
+            setTimeout (function (){
+                    $('#future-node').css({display: 'block'});
+                    $('#future-node').addClass('infinite animated jello');
+                    once = 1;
+            }, 3000);        
+        
+        });
+    }
     }, {
     offset: 100
-});  
-    
-    
-    
-    
+});
+
+
+
+
 }); //doc ready

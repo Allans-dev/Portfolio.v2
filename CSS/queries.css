@@ -2,13 +2,18 @@
 /* 1024-1200 */
 @media only screen and (max-width: 1200px) {
     
-    .row { padding: 0 2%;}
-    
-    .row { width: 100%; }
+    .row { 
+        padding: 0 2%;
+        width: 100%;
+    }
     
     .skills img { margin: 0 8px; }
     
-    .line-box { margin: 0 auto; }
+    .about-col {margin: 0; }
+    
+    #timeline-box {
+        width: 500px;
+    }
 }
 
 /* 768-1023 */
@@ -53,98 +58,11 @@
     
     .pitch-text-box { width: 60%; }
     
-    #timeline { display: block; }
-
-    .about-col {
-        float: none;
-        margin: 0 auto;
-    }
     .h1Mid { top: 55%; }
     
-    #primary {
-        bottom: 7%;
-        left: 2%;
-    }
-
-    #high {
-        bottom: 29%;
-        left: -35%;
-    }
-
-    #uni {
-        bottom: 23%;
-        left: 24.5%;
-    }
-
-    #resident {
-        bottom: 45%;
-        left: -27%;
-    }
-
-    #compliance {
-        bottom: 38.5%;
-        right: 0%;
-    }
-
-    #htmlcss {
-        bottom: 60%;
-        left: -25%;
-    }
-
-    #FCC {
-        bottom: 54%;
-        right: -17%;
-    }
-
-    #weird {
-        bottom: 75.5%;
-        left: -24%;
-    }
 }
 /* 481-767 */
 @media only screen and (max-width: 767px) {
-    
-    #scale { -webkit-transform:scale(.8); transform:scale(.8); }
-    
-    #primary {
-        bottom: 8.5%;
-        left: 2%;
-    }
-
-    #high {
-        bottom: 29%;
-        left: -31%;
-    }
-
-    #uni {
-        bottom: 24.5%;
-        left: 24.5%;
-    }
-
-    #resident {
-        bottom: 44.5%;
-        left: -21%;
-    }
-
-    #compliance {
-        bottom: 39.5%;
-        right: 5%;
-    }
-
-    #htmlcss {
-        bottom: 60%;
-        left: -17%;
-    }
-
-    #FCC {
-        bottom: 55%;
-        right: -12.5%;
-    }
-
-    #weird {
-        bottom: 75.5%;
-        left: -14%;
-    }
     
     .pitch-text-box { width: 80%; }
     
@@ -155,8 +73,6 @@
     .title { font-size: 120%; }
     
     .about { margin: 5px auto; }
-    
-    .line-box { margin: 0 auto; }
     
     #future { font-size: 200%; }
     
@@ -174,9 +90,7 @@
 /* 0-500 */
 @media only screen and (max-width: 500px) {
     
-    #scale,
     .main-nav,
-    #timeline,
     .project-des img {
        display: none; 
     }
