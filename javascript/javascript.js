@@ -284,61 +284,44 @@ ABOUT ME
 
 /* FUTURE NODE */
 
-var jello = 0
-var fnodeTrigger = 0
-
-$('#future-node').hover(function () {
-    if (jello === 0) {
-        $('#future-node').addClass('infinite animated jello');
-        $('#future-node').css({cursor:'pointer'});
-    }
-}, function () {
-    $('#future-node').removeClass('infinite animated jello');
-});
+var fnodeTrigger = 0;
 
 
 
 $('#future-node').click(function (){
-    jello = 1;
     if (fnodeTrigger === 0){
+    $('#future-node').removeClass('infinite animated jello');
+    //$('#timeline').css({'border-left': 'none'});
+    $('#timeline').animate({height: '0'});
+    $('#final-line').animate({width: '0'});
+    $('#future-node').animate({left: '0'});
+    $('.time-box').css({display: 'none'});    
+    $('.time-box').removeClass('animated');  
     $('#future-node').animate({
         height: '500',
         width: '500',
         'border-radius':'15',
-        top: '180',
-        left: '-300'
-    }, 1500);
-    $('.node').css({display:'none'});
-    $('#future-node').css({'transform':'rotate(35deg)'});
-    $('#future-node').removeClass('infinite animated jello');
-    $('.line').css({'border-bottom': 'none'});
-    $('#timeline').addClass('animated fadeOutDown');
+    }, 1500);    
     setTimeout(function () {
         $('#future').removeClass('fadeOut');
         $('#future').css({'display':'block'});
         $('#future').addClass('animated fadeInUp');
-        $('#timeline').css({opacity: '0'});
     }, 1500);
     fnodeTrigger = 1;
   } else {
-    jello = 0;
     $('#future').removeClass('fadeInUp');
     $('#future').addClass('fadeOut');
     $('#future-node').animate({
-        height: '20',
-        width: '20',
+        height: '30',
+        width: '30',
         'border-radius':'50%',
-        top: '0',
-        left: '0',
+        left: '42%',
     }, 1500);
     setTimeout(function () {
-        $('#future').css({'display':'none'});
-        $('#timeline').removeClass('fadeOutDown');
-        $('#timeline').addClass('fadeInUp');
-        $('.node').css({display:'block'});
-        $('#future-node').css({'transform':'rotate(-35deg)'});
-        $('.line').css({'border-bottom': '5px solid #581100'});
-        $('#timeline').css({opacity: '1'});
+        $('#final-line').animate({width: '42%'});
+        $('.time-box').css({display: 'block'});    
+        $('.time-box').addClass('animated fadeInUp');
+        $('#timeline').animate({height: '560'});
     }, 1500);
 
       fnodeTrigger = 0;
@@ -355,21 +338,65 @@ $('#about-me').waypoint(function (direction){
 
     //timeline
         $('#timeline-box').animate({
-            height: '560',
+            height: '600',
             top: '0'
-        }, 2000, function (){
-            var historyArr = ['#weird', '#htmlcss', '#FCC', '#compliance', '#resident', '#uni', '#high', '#primary'];
-            var lineArr = ['#weird-line', '#htmlcss-line', '#FCC-line', '#compliance-line', '#resident-line', '#uni-line', '#high-line', '#primary-line'];
-
-console.log(historyArr);
-console.log(lineArr);
-
-            historyArr.forEach(function (item, index) {
-                setTimeout (function () {
-                  console.log($('item'));
-                   $('item').addClass('animated flipInX');
-                }, 400 * index);
-            })
+        }, 1500, function (){
+            
+            $('#weird').addClass('animated flipInX');
+            $('#weird').css({opacity:'1'});
+            $('#weird-line').animate({width:'36'});            
+            
+            setTimeout (function () {
+                $('#htmlcss').addClass('animated flipInX');
+                $('#htmlcss').css({opacity:'1'});
+                $('#htmlcss-line').animate({width:'36'});     
+            }, 300);
+           
+            setTimeout (function () {
+                $('#FCC').addClass('animated flipInX');
+                $('#FCC').css({opacity:'1'});
+                $('#FCC-line').animate({width:'36'});     
+            }, 600);
+            
+            setTimeout (function () {
+                $('#compliance').addClass('animated flipInX');
+                $('#compliance').css({opacity:'1'});
+                $('#compliance-line').animate({width:'36'});     
+            }, 900);
+            
+            setTimeout (function () {
+                $('#resident').addClass('animated flipInX');
+                $('#resident').css({opacity:'1'});
+                $('#resident-line').animate({width:'36'});     
+            }, 1200);
+            
+            setTimeout (function () {
+                $('#uni').addClass('animated flipInX');
+                $('#uni').css({opacity:'1'});
+                $('#uni-line').animate({width:'36'});     
+            }, 1500);
+            
+            setTimeout (function () {
+                $('#high').addClass('animated flipInX');
+                $('#high').css({opacity:'1'});
+                $('#high-line').animate({width:'36'});     
+            }, 1800);
+            
+            setTimeout (function () {
+                $('#primary').addClass('animated flipInX');
+                $('#primary').css({opacity:'1'});
+                $('#primary-line').animate({width:'36'});     
+            }, 2100);
+            
+            setTimeout (function (){
+                $('#final-line').animate({width: '42%'}, 600);
+            }, 2400);
+            
+            setTimeout (function (){
+                $('#future-node').css({display: 'block'});
+                $('#future-node').addClass('infinite animated jello');
+            }, 3000);        
+            
         });
 
     }, {

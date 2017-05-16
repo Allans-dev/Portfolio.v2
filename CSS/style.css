@@ -472,8 +472,8 @@ h1 {
 .line {
     position: relative;
     display: inline-block;
-    height: 0px;
-    width: 36px;
+    height: 0;
+    width: 0;
     border-bottom: 4px solid #581100;
     margin: 0 -8px 6px -8px;
     padding: 0px;
@@ -502,31 +502,31 @@ h1 {
 }
 
 #high-box {
-    bottom: 55px;
+    bottom: 45px;
 }
 
 #uni-box {
-    bottom: 125px;
+    bottom: 115px;
 }
 
 #resident-box {
-    bottom: 195px;
+    bottom: 185px;
 }
 
 #compliance-box {
-    bottom: 265px;
+    bottom: 255px;
 }
 
 #FCC-box {
-    bottom: 335px;
+    bottom: 325px;
 }
 
 #htmlcss-box {
-    bottom: 405px;
+    bottom: 395px;
 }
 
 #weird-box {
-    bottom: 475px;
+    bottom: 465px;
 }
 
 #future {
@@ -534,10 +534,9 @@ h1 {
 }
 
 #final-line {
-    width: 50%;
+    width: 0;
     height: 0;
     border-top: 4px solid #581100;
-    display: none;
 }
 
 #future-node {
@@ -545,102 +544,16 @@ h1 {
     width: 30px;
     height: 30px;
     border-radius: 50%;
-    left: 50%;
+    left: 42%;
     margin-left: -15px;
     margin-top: -17px;
     background-color: #581100;
     display: none;
 }
 
-/*
-.line-box {
-    max-width: 500px;
-    height: 500px;
-    margin: 25px auto;
-    position: relative;
+#future-node:hover {
+    cursor: pointer;
 }
-
-.line {
-    position: absolute;
-    border-bottom: 5px solid #581100;
-    bottom: 100px;
-    width: 560px;
-    -webkit-transform: rotate(-35deg);
-    transform: rotate(-35deg);
-    -webkit-transform-origin: 0% 0%;
-    transform-origin: 0% 0%;
-    z-index: 100;
-}
-
-.node,
-.final-node {
-    float: left;
-    z-index: 100;
-}
-
-.node {
-    margin-right: 47.5px;
-}
-
-
-
-#primary {
-    bottom: 7%;
-    left: 2%;
-    opacity: 0;
-}
-
-#high {
-    bottom: 30%;
-    left: -40%;
-    opacity: 0;
-}
-
-#uni {
-    bottom: 22%;
-    left: 24%;
-    opacity: 0;
-}
-
-#resident {
-    bottom: 45%;
-    left: -33%;
-    opacity: 0;
-}
-
-#compliance {
-    bottom: 37.5%;
-    right: -5.5%;
-    opacity: 0;
-}
-
-#htmlcss {
-    bottom: 60%;
-    left: -33%;
-    opacity: 0;
-}
-
-#FCC {
-    bottom: 53.5%;
-    right: -22%;
-    opacity: 0;
-}
-
-
-#weird {
-    bottom: 76%;
-    left: -33%;
-    opacity: 0;
-}
-
-#future-node {
-    float: right;
-    display: block;
-}
-
-#future {
-    display:none;
-} */
 
 #future {
     max-width: 400px;
