@@ -11,9 +11,7 @@
     
     .about-col {margin: 0; }
     
-    #timeline-box {
-        width: 500px;
-    }
+    #timeline-box { width: 500px; }
 }
 
 /* 768-1023 */
@@ -77,18 +75,14 @@
         transform: scale(0.75);
     }
     
-    #timeline {
-        margin: 0 auto;
-    }
+    #timeline { margin: 0 auto; }
     
     .history {
         padding: 10px;
         height: 40px;
     }
     
-    .project-des .col-md-5 {
-        text-align: left;
-    }
+    .project-des .col-md-5 { text-align: left; }
     
     .FCC-link:link,
     .FCC-link:visited {
@@ -128,7 +122,8 @@
         width: 150px; 
         margin-bottom: 15px;
     }
-    
+ 
+    #about-me { padding-bottom: 0; }
 }
 /* 0-500 */
 @media only screen and (max-width: 500px) {
@@ -150,11 +145,7 @@
 }
     
     .main-nav,
-    .project-des img {
-       display: none; 
-    }
-    #timeline-box {
-        margin: 0;
-    }
+    .project-des img { display: none; }
+    #timeline-box { margin: 0; }
 }
 

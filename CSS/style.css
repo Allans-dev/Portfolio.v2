@@ -203,7 +203,7 @@ h1 {
     background-color: rgba(255, 255, 255, 0.8);
     -webkit-transition: background-color 0.5s, width 0.5s, left 0.5s;
     transition: background-color 0.5s, width 0.5s, left 0.5s;
-    padding: 8px 12px;
+    padding: 8px 0 8px 12px;
     border-radius: 8px;
     opacity: 0;
     cursor: default;
@@ -530,10 +530,6 @@ h1 {
     bottom: 465px;
 }
 
-#future {
-    display: none;
-}
-
 #final-line {
     width: 0;
     height: 0;
@@ -565,6 +561,7 @@ h1 {
     text-align: center;
     font-size: 150%;
     color: #ffa18b;
+    display: none;
 }
 
 .waiting {
@@ -595,11 +592,6 @@ h1 {
 
 .contact-form .row {
     margin: 15px auto;
-}
-
-.col-center {
-    float: none;
-    margin: 0 auto;
 }
 
 label {
