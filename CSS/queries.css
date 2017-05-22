@@ -37,16 +37,22 @@
         margin: 0 auto;
         float: none;
     }
-    .mission { text-align: center; }
+    
+    .mission { 
+        text-align: center;
+        margin-left: 0;
+    }
+    
     .social-media li{
         float: none;
         display: inline-block;
-        
     }
+    
     .social-media {
         margin: 0;
         text-align: center;
     }
+    
     .social-media li:first-child { margin-left: 0; }
     
     .title { font-size: 110%; }
@@ -64,15 +70,54 @@
 /* 481-767 */
 @media only screen and (max-width: 767px) {
     
+    #timeline-box {
+        -webkit-transform: scale(0.75);
+        transform: scale(0.75);
+    }
+    
+    #timeline {
+        margin: 0 auto;
+    }
+    
+    .history {
+        padding: 10px;
+        height: 40px;
+    }
+    
+    #portfolio {
+        padding: 0;
+    }
+    
+    .project-des .col-md-5 {
+        text-align: left;
+    }
+    
+    .FCC-link:link,
+    .FCC-link:visited {
+    right: 5%;
+    margin-top: 0;
+}
+    
     .pitch-text-box { width: 80%; }
     
     body, html { font-size: 16px; }
     
     .photo-me { width: 140px; }
     
-    .title { font-size: 120%; }
+    .main-nav li {
+    margin-left: 10px;
+}
     
-    .about { margin: 5px auto; }
+    #title { 
+        font-size: 120%; 
+        left: 15%;
+    }
+    
+    h1 {
+        font-size: 32px;
+    }
+    
+    .about { margin: 0 auto; }
     
     #future { font-size: 200%; }
     
@@ -90,10 +135,28 @@
 /* 0-500 */
 @media only screen and (max-width: 500px) {
     
+    .about-me .row {
+        padding: 0;
+        width: 100%;
+        margin: 0 1px;
+    }
+    
+    #timeline-box {
+        left: -60px;
+        margin: 0;
+    }
+    
+    .pitch-text-box {
+        top: 40%;
+        height: 50%;
+}
+    
     .main-nav,
     .project-des img {
        display: none; 
     }
-
+    #timeline-box {
+        margin: 0;
+    }
 }
 
