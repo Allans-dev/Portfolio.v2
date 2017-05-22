@@ -298,8 +298,8 @@ $('#future-node').click(function (){
     $('.time-box').css({display: 'none'});    
     $('.time-box').removeClass('animated fadeInUp');  
     $('#future-node').animate({
-        height: '500',
-        width: '500',
+        height: '440',
+        width: '440',
         'border-radius':'15',
     }, 1500);    
     setTimeout(function () {
