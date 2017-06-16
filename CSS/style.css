@@ -368,7 +368,6 @@ h1 {
     transition: border 0.3;
     right: 5%;
     margin-top: 10px;
-    /*top: 35px;*/
     font-size: 90%;
 }
 
@@ -403,7 +402,17 @@ h1 {
 .fa-chevron-up:active {
     color: #9c1e00;
     cursor: pointer;
+}
 
+.project-btn-box .fa-github {
+    position: absolute;
+    right: 2%;
+}
+
+.project-btn-box .fa-github:hover,
+.project-btn-box .fa-github:active {
+    color: #9c1e00;
+    cursor: pointer;
 }
 
 /*---------------------------------
