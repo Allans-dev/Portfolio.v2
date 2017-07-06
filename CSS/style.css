@@ -237,6 +237,35 @@ h1 {
     width: 80%;
 }
 
+.currentProject:link,
+.currentProject:visited {
+    position: absolute;
+    right: 15%;
+    width: 180px;
+    height: 70px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 8px;
+    bottom: 15%;
+}
+
+.currentProject:hover > div {
+    border-bottom: 2px solid #9c1e00;
+}
+
+.currentProject div {
+    text-align: center;
+    margin: 18px 10px; 
+    padding-bottom: 4px;
+    letter-spacing: 2px;
+    border-bottom: 2px solid transparent;
+    -webkit-transition: border-bottom 0.3s;
+    transition: border-bottom 0.3s;
+}
+
+
+
+
+
 /*---------------------------------
   SKILLS
 ---------------------------------*/

@@ -124,6 +124,17 @@
     }
  
     #about-me { padding-bottom: 0; }
+    
+    .currentProject:link,
+    .currentProject:visited { 
+        bottom: 2%;
+        right: 0;
+        left: 15%;
+        height: 50px;
+    }
+    
+    .currentProject div { margin: 10px 15px; }
+    
 }
 /* 0-500 */
 @media only screen and (max-width: 500px) {
