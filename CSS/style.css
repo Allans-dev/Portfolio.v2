@@ -15,6 +15,7 @@ body {
     font-size: 20px;
     text-rendering: optimizeLegibility;
     overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
 }
 
 /*---------------------------------
@@ -157,7 +158,6 @@ header {
 /*------------PITCH---------------*/
 
 h1 {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 200;
 }
 
@@ -248,18 +248,21 @@ h1 {
     bottom: 15%;
 }
 
-.currentProject:hover > div {
-    border-bottom: 2px solid #9c1e00;
+.currentProject:hover {
+    background-color: rgba(88, 17, 0, 0.6);
+    color: #e5e5e5;
+    -webkit-transition: border-bottom 0.3s, color 0.3s, background-color 0.3s;
+    transition: border-bottom 0.3s, color 0.3s, background-color 0.3s;
 }
 
 .currentProject div {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     text-align: center;
-    margin: 18px 10px; 
+    margin: 0; 
     padding-bottom: 4px;
     letter-spacing: 2px;
-    border-bottom: 2px solid transparent;
-    -webkit-transition: border-bottom 0.3s;
-    transition: border-bottom 0.3s;
 }
 
 
@@ -633,7 +636,6 @@ h1 {
 }
 
 label {
-    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 400;
 }
 

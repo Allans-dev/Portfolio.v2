@@ -401,9 +401,7 @@ $('#about-me').waypoint(function (direction){
         
         });
     }
-    }, {
-    offset: 100
-});
+    });
 
 
 
