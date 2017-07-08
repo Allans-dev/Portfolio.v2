@@ -488,6 +488,7 @@ h1 {
   top: 600px;
   height: 0;
   width: 600px;
+  display: none;
 }
 
 #timeline {
