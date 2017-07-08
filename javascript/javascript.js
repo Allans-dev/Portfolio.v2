@@ -298,8 +298,8 @@ $('#future-node').click(function (){
     $('.time-box').css({display: 'none'});    
     $('.time-box').removeClass('animated fadeInUp');  
     $('#future-node').animate({
-        height: '500',
-        width: '500',
+        height: '420px',
+        width: '420px',
         'border-radius':'15',
     }, 1500);    
     setTimeout(function () {
@@ -318,6 +318,7 @@ $('#future-node').click(function (){
         left: '42%',
     }, 1500);
     setTimeout(function () {
+        $('#future').css({display:'none'});
         $('#final-line').animate({width: '42%'});
         $('.time-box').css({display: 'block'});    
         $('.time-box').addClass('animated fadeInUp');
@@ -388,11 +389,11 @@ $('#about-me').waypoint(function (direction){
                 $('#primary-line').animate({width:'36'});     
             }, 2100);
             
-            setTimeout (function (){
+            setTimeout (function () {
                 $('#final-line').animate({width: '42%'}, 600);
             }, 2400);
             
-            setTimeout (function (){
+            setTimeout (function () {
                     $('#future-node').css({display: 'block'});
                     $('#future-node').addClass('infinite animated jello');
                     once = 1;
