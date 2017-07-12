@@ -338,6 +338,7 @@ $('#about-me').waypoint(function (direction){
         $('#me').addClass('animated flipInY');
 
     //timeline
+        $('#timeline-box').css({ display:'block'});
         $('#timeline-box').animate({
             height: '600',
             top: '0'
@@ -401,9 +402,7 @@ $('#about-me').waypoint(function (direction){
         
         });
     }
-    }, {
-    offset: 100
-});
+    });
 
 
 
